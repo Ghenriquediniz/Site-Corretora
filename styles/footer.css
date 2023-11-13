@@ -1,0 +1,17 @@
+footer {
+    background-color: var(--cor-do-footer);
+    padding: 2rem;
+    text-align: center;
+}
+
+.footer-gui {
+    font-size: 40px;
+ 
+}
+
+.footer-contato {
+    font-size: 25px;
+    padding: 2rem;
+ 
+}
+

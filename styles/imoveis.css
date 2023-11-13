@@ -1,0 +1,73 @@
+.imoveis {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    padding-block-end: 1rem;
+    font-family: serif;
+    flex-wrap: wrap;
+}
+
+.imovei {
+    margin: 0.5rem;
+    display: flex;
+    flex-direction:column;
+    padding: 1rem 1rem 1rem 1rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 10px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.nome {
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;  
+}
+
+.nome-localizacao {
+    font-size: 30px;
+    text-align: center;
+}
+
+.nome-preco {
+    text-align: center;
+    font-weight: bold;
+    font-size: 45px;
+    color: var(--cor-do-preco);
+    padding: 1rem;
+}
+
+.imoveis-imagem {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10%;
+    height: 300px;
+    margin: 0 auto;
+    width: 600px;
+    cursor: pointer;
+}
+
+.imoveis-imagem--casa01 {
+    background-image: url('../Img/casa\ 01.jpg');
+}
+
+.buscar-imovel {
+    text-align: center;
+}
+
+.texto-imoveis {
+   
+    font-size: 30px;
+    text-align: center;
+    padding: 2rem;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 840px) {
+
+    .imoveis-imagem {
+        height: 250px;
+        width: 350px;
+    }
+}
+

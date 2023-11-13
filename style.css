@@ -1,0 +1,24 @@
+@import url("reset.css");
+@import url("styles/header.css");
+@import url("styles/principal.css");
+@import url("styles/procurar.css");
+@import url("styles/imoveis.css");
+@import url('styles/footer.css');
+@import url('styles/verimovel.css');
+
+:root {
+    --cor-de-fundo: rgb(217, 225, 241);
+    --cor-do-header: rgb(193, 216, 240);
+    --cor-da-fonte-principal: rgb(243, 241, 241);
+    --cor-da-pesquisa: rgb(233, 227, 206);
+    --cor-da-area-pesquisa: rgb(106, 94, 82);
+    --cor-da-busca: black;
+    --cor-do-preco: rgb(30, 216, 244);
+    --cor-do-footer: rgb(148, 165, 184);;  
+     
+}
+
+body {
+    font-family: garamond;
+    background-color: var(--cor-de-fundo);
+}

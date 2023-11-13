@@ -1,0 +1,83 @@
+.imgver {
+    overflow-x: auto; /* Adiciona a barra de rolagem horizontal */
+    white-space: nowrap; /* Impede que as imagens quebrem para a próxima linha */
+}
+
+.row {
+    font-size: 0; /* Remove espaços entre as divs internas (imagens) */
+}
+
+.imgverfoto1 {
+    background-image: url("../Img/casa\ principal.jpg");
+    width: 600px; /* Ajuste a largura conforme necessário */
+    height: 500px; /* Ajuste a altura conforme necessário */
+    display: inline-block;
+    margin-right: 10px; /* Adiciona algum espaço entre as imagens */
+    background-position: center; /* Centraliza a imagem vertical e horizontalmente */
+    background-repeat: no-repeat;
+    background-size: cover; /* Ajusta o tamanho para cobrir completamente a div */
+}
+
+.titulo_ver {
+    font-size: 40px;
+    padding: 30px;
+}
+
+.localizacao{
+    font-size: 20px;
+    margin-left: 30px;
+    margin-block-end: 30px;
+}
+
+.informacoes_adicionais{
+    margin-left: 30px;
+    margin-block-end: 30px;
+}
+
+.informacoes_adicionais h3{
+    font-size: 15px;
+}
+
+.informacoes_adicionais p{
+    font-size: 40px;
+}
+
+.descricao{
+    margin-left: 30px;
+}
+
+.icon-list ul{
+    display: flex;
+}
+
+.icon-list img {
+    width: 70px; 
+    height: 70px; 
+    margin-bottom: 10px;
+    margin-right: 18px;
+    padding: 10px;
+}
+
+.icon-list h3{
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+
+
+
+@media only screen and (max-width: 840px) {
+    .imgverfoto1{
+        width: 350px; 
+        height: 300px;
+        background-size: cover;
+    }
+
+    .icon-list img {
+        width: 50px; 
+        height: 50px; 
+        
+    }
+
+}

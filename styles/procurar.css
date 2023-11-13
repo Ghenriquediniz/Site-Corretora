@@ -1,0 +1,79 @@
+.procurar-seu-imovel {
+    background: var(--cor-da-area-pesquisa);
+    font-size: 23px;
+    text-align: center;
+    padding: 1rem;
+    font-weight: bold;
+
+}
+
+.procurar {
+    padding: 1.5rem;
+    text-align: center;
+    background: var(--cor-da-area-pesquisa);
+    align-items: center;
+    font-weight: bold;
+
+}
+
+.procurar__tipo, 
+.procurar__cidade {
+    background-color: var(--cor-da-pesquisa);
+    font-size: 20px;
+    border-radius: 2%;
+    padding: 0.5rem 2rem;
+    
+}
+
+.procurar-titulo {
+    font-size: 20px;
+    padding: 0 2rem 0;
+}
+
+.buscar {
+    
+    padding-left: 2%;
+}
+
+.btn {
+    background-color: var(--cor-da-busca);
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    padding: 0.3rem 2rem 0.4rem;
+    cursor: pointer;
+    position: relative;
+    border-radius: 8%;
+    margin-top: 25px;
+    margin-block-end: 15px;
+   
+}
+
+.btn:hover {
+    background-color: var(--cor-do-header);
+}
+
+    @media only screen and (max-width: 917px) {
+
+        .btn {
+            display: block; /* Faz com que o botão ocupe toda a largura e vá para baixo */
+            margin: 10px auto;
+        }
+
+        .procurar__cidade,
+        .procurar__tipo {
+            display: block;
+            margin: 10px auto;
+        }
+
+    }
+
+
+/*.procurar_pesquisa {
+    background: var(--cor-da-pesquisa);
+    border: 1px solid;
+    border-radius: 30px;
+    padding: 1em;
+    width: 50%;
+    text-align: center;
+    color: var(--cor-da-pesquisa);
+}*/

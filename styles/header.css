@@ -1,0 +1,35 @@
+header{
+    background-color: var(--cor-do-header);  
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 10%;
+    height: 3.5em;
+}
+
+.menu {
+    display: flex;
+    gap: 3em; 
+}
+
+a {
+    text-decoration: none;
+    color: #000000
+}
+
+/* Adicionando uma media query para ajustar o layout em telas menores */
+@media only screen and (max-width: 768px) {
+    .cabecalho {
+        flex-direction: column; /* Altera o layout para coluna em telas menores */
+        align-items: center; /* Ajusta a alinhamento para o início */
+        padding: 1rem; /* Ajusta o preenchimento conforme necessário */
+    }
+
+    .menu {
+        margin-top: 1rem; /* Adiciona espaçamento entre os itens do menu */
+        gap: 1em; /* Reduz o espaçamento entre os itens do menu */
+    }
+}
