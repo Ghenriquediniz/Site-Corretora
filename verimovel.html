@@ -7,6 +7,7 @@
     <title>Gui Imóveis</title>
     <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto:100,300,400,500,700,900" rel="stylesheet" />
     <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="styles/contato.css"/>
 </head>
 <body>
     <header class="cabecalho">
@@ -80,8 +81,33 @@
                     </div>
             
             </div>
+            <div class="informacoes_adicionais">
+                <p> Descrição sobre o local</p>
+                <h3>Bem-vindo ao seu novo lar, um refúgio de tranquilidade e elegância no epicentro da cidade! Este imóvel excepcional oferece mais do que apenas uma casa; proporciona um estilo de vida único para aqueles que buscam conforto, conveniência e sofisticação.</h3>
+            </div>
+
+            <div class="mapa">
+                <p>Localização</p>
+
+                <div class="maps">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1136.1278646238434!2d-49.238045263400146!3d-16.703714803254893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbr!4v1699919716176!5m2!1sen!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
             
-            
+        </div>
+
+        <div class="entre_contato">
+            <form action="https://api.staticforms.xyz/submit" method="post">
+                <input type="text" name="name" placeholder="Your Name">
+                <input type="text" name="email" placeholder="Your Email" />
+                <textarea name="message"></textarea>
+                <input type="text" name="honeypot" style="display:none">
+                <input type="hidden" name="accessKey" value="ea415d96-4852-41ea-a0a2-9e979120b324">
+                <input type="hidden" name="subject" value="Contact us from - example.com" />
+                <input type="hidden" name="replyTo" value="@">
+                
+                <input type="submit" value="Submit" />
+            </form>
         </div>
 
     </section> 
