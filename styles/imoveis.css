@@ -1,4 +1,4 @@
-.imoveis {
+.imoveis_pagina {
     display: flex;
     justify-content: space-around;
     padding-top: 1rem;
@@ -9,6 +9,7 @@
     flex-wrap: wrap;
 }
 
+.imoveiap,
 .imovei {
     margin: 0.5rem;
     display: flex;
