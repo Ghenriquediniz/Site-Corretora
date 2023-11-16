@@ -7,6 +7,7 @@
     <title>Gui Imóveis</title>
     <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto:100,300,400,500,700,900" rel="stylesheet" />
     <link rel="stylesheet" href="style.css"/>
+    <script src="./script/buscar.js"></script>
 </head>
 <body>
     <header class="cabecalho">
@@ -40,25 +41,25 @@
         <a class="procurar-seu-imovel__texto">Encontre o seu imóvel ideal
         </a>
         
-        <div class="procurar">
+        <div id="tipo" class="procurar">
             
             <label class="procurar-titulo">Tipo do Imóvel</label>
             <select class="procurar__tipo">
-                <option>Casa</option>
-                <option>Apartamento</option>
+                <option value="todos">Todos</option>
+                <option value="casa">Casa</option>
+                <option value="apartamento">Apartamento</option>
             </select>
             <label class="procurar-titulo">Cidade</label>
             <select class="procurar__cidade">
-                <option>Goiânia</option>
-                <option>Aparecida de Goiânia</option>
-                <option>Senador Canedo</option>
-                <option>Anápolis</option>
-                <option>Trindade</option>
+                <option value="go">Goiânia</option>
+                <option value="apg">Aparecida de Goiânia</option>
+                <option value="sc">Senador Canedo</option>
+                <option value="an">Anápolis</option>
             </select>
             
-            <secletc class="buscar">
-                <button class="btn">Buscar</button>
-            </secletc>
+            
+            <button class="btn" onclick="search()">Buscar</button>
+            
             <!--<section class="procurar">
                 <input type="search" class="procurar_pesquisa" placeholder="Procure seu imóvel">
             </section> -->
@@ -69,71 +70,55 @@
         <div class="texto-imoveis">
             <h2>Imóveis em Destaque</h2>
         </div>
-        <div class="imoveis">
-            <div class="imovei">
-                <div class="imoveis-imagem imoveis-imagem--casa01">
-                </div>
-                    <span class="nome">Casa de alto padrão</span>
-                    <span class="nome-localizacao">Goiânia-GO</span>
-                    <span class="nome-preco">R$ 435.000,00</span>
-                    <secletc class="buscar-imovel">
-                        <a href="verimovel.html" class="btn">Ver imóvel</a>
-                    </secletc>
-            </div>
+        <div class="imoveis_pagina">
+            <div class="todos_os_imoveis">
+                <div class="imoveis">
+                    <div class="imovei">
+                        <div class="imoveis-imagem imoveis-imagem--casa01">
+                        </div>
+                            <span class="nome">Casa de alto padrão</span>
+                            <span class="nome-localizacao">Goiânia-GO</span>
+                            <span class="nome-preco">R$ 435.000,00</span>
+                            <secletc class="buscar-imovel">
+                                <a href="verimovel.html" class="btn">Ver imóvel</a>
+                            </secletc>
+                    </div>
 
-            <div class="imovei">
-                <div class="imoveis-imagem imoveis-imagem--casa01">
-                </div> 
-                    <span class="nome">Casa de alto padrão</span>
-                    <span class="nome-localizacao">Goiânia-GO</span>
-                    <span class="nome-preco">R$ 435.000,00</span>
-                    <secletc class="buscar-imovel">
-                        <button class="btn">Ver imóvel</button>
-                    </secletc>
-            </div>
-            <div class="imovei">
-                <div class="imoveis-imagem imoveis-imagem--casa01">
-                </div> 
-                    <span class="nome">Casa de alto padrão</span>
-                    <span class="nome-localizacao">Goiânia-GO</span>
-                    <span class="nome-preco">R$ 435.000,00</span>
-                    <secletc class="buscar-imovel">
-                        <button class="btn">Ver imóvel</button>
-                    </secletc>
-            </div>  
-        </div>
-        <div class="imoveis">
-            <div class="imovei">
-                <div class="imoveis-imagem imoveis-imagem--casa01">
+                    <div class="imovei">
+                        <div class="imoveis-imagem imoveis-imagem--casa01">
+                        </div> 
+                            <span class="nome">Casa de alto padrão</span>
+                            <span class="nome-localizacao">Goiânia-GO</span>
+                            <span class="nome-preco">R$ 435.000,00</span>
+                            <secletc class="buscar-imovel">
+                                <button class="btn">Ver imóvel</button>
+                            </secletc>
+                    </div>
                 </div>
-                    <span class="nome">Casa de alto padrão</span>
-                    <span class="nome-localizacao">Goiânia-GO</span>
-                    <span class="nome-preco">R$ 435.000,00</span>
-                    <secletc class="buscar-imovel">
-                        <button class="btn">Ver imóvel</button>
-                    </secletc>
-            </div>
+                <div class="imoveisap">
+                    <div class="imoveiap">
+                        <div class="imoveis-imagem imoveis-imagem--casa01">
+                        </div>
+                            <span class="nome">Ap de alto padrão</span>
+                            <span class="nome-localizacao">Goiânia-GO</span>
+                            <span class="nome-preco">R$ 435.000,00</span>
+                            <secletc class="buscar-imovel">
+                                <a href="verimovel.html" class="btn">Ver imóvel</a>
+                            </secletc>
+                    </div>
 
-            <div class="imovei">
-                <div class="imoveis-imagem imoveis-imagem--casa01">
-                </div> 
-                    <span class="nome">Casa de alto padrão</span>
-                    <span class="nome-localizacao">Goiânia-GO</span>
-                    <span class="nome-preco">R$ 435.000,00</span>
-                    <secletc class="buscar-imovel">
-                        <button class="btn">Ver imóvel</button>
-                    </secletc>
+                    <div class="imoveiap">
+                        <div class="imoveis-imagem imoveis-imagem--casa01">
+                        </div> 
+                            <span class="nome">Ap de alto padrão</span>
+                            <span class="nome-localizacao">Goiânia-GO</span>
+                            <span class="nome-preco">R$ 435.000,00</span>
+                            <secletc class="buscar-imovel">
+                                <button class="btn">Ver imóvel</button>
+                            </secletc>
+                    </div>
+                </div>
             </div>
-            <div class="imovei">
-                <div class="imoveis-imagem imoveis-imagem--casa01">
-                </div> 
-                    <span class="nome">Casa de alto padrão</span>
-                    <span class="nome-localizacao">Goiânia-GO</span>
-                    <span class="nome-preco">R$ 435.000,00</span>
-                    <secletc class="buscar-imovel">
-                        <button class="btn">Ver imóvel</button>
-                    </secletc>
-            </div>  
         </div>
     </section>
 
